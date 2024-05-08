@@ -1,0 +1,28 @@
+<div>
+    <div class="col-sm-12">
+        <label>Codigo </label>
+        <input placeholder="Codigo">
+    </div>
+    <div class="col-sm-12">
+        <label>Razòn Social </label>
+        <input placeholder="Razón Social">
+    </div>
+    <div class="col-sm-12">
+        <label>RFC </label>
+        <input placeholder="RFC">
+    </div>
+    <button (click)="addProveedor();">Enviar</button>
+</div>
+
+<table>
+    <thead>
+      <th>Codigo</th>
+      <th>Razón Social</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of proveedor; index as i">
+        <td>{{row.codigo}}</td>
+      </tr>
+    </tbody>
+  
+  </table>
